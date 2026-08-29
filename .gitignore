@@ -1,0 +1,14 @@
+rootfs/
+rootfs-bad/
+
+*.iso
+*.qcow2
+*.tar.xz
+
+edk2-vars.fd
+live-vars.fd
+
+result
+result-*
+iso/boot/initramfs.img
+iso/boot/initramfs.img
