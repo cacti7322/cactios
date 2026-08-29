@@ -2,7 +2,7 @@
 
 function cacti-build
     cd ~/Projects/cactios-iso/rootfs
-    find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../iso/boot/initramfs.img
+    sudo sh -c 'find . -print0 | cpio --null -ov --format=newc | gzip -9 > ../iso/boot/initramfs.img'
     cd ..
     grub-mkrescue -o cactios-v0.1.iso iso/
 end
